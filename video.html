@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.links{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+    
+}
+.video-1{
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.text-3{
+            font-size: 50px;
+            margin-left: 30px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="burger-menu" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="logo"><img src="img/logo-social.png" alt="logo"></div>
+        <ul class="nav-list">
+            <li><a href="index.html">Find Doctors</a></li>
+            <li><a href="video.html">Video Counsult</a></li>
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="about.html">About/Contact us</a></li>
+            <li><a href="login.html"><button class="btn">Login/signup</button></a></li>
+        </ul>
+       
+    </div>
+
+     <div class="container">
+        <h1>Video Consult with a Doctor</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <p>Doctor will be get your contact in 24 hours</p>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <div class="sec1">
+        <p class="text-3">
+            Some Example of Video Counsulting
+        </p>
+    </div>
+
+    <div class="links">
+        <div class="video-1">
+            <iframe width="325" height="290" src="https://www.youtube.com/embed/QbUqZ3_9DKs" title="#HelloDoctor Consult a doctor online from home | Top doctors available 24*7 on Practo | Hindi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-1">
+            <iframe width="325" height="290" src="https://www.youtube.com/embed/4cT6GE5g8aw" title="#HelloDoctor Consult a doctor online from home | Top doctors available 24*7 on Practo | Hindi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-1"><iframe width="325" height="290" src="https://www.youtube.com/embed/l-sZUQ-pQjs" title="Video Consult with Top Doctors Online | Practo | Doctor Ki Salah Mobile Pe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        <div class="video-1">
+            <iframe width="325" height="290" src="https://www.youtube.com/embed/gCONPv6a1mE" title="Video Consult with Top Doctors Online | Practo | Doctor Ki Salah Mobile Pe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="text-footer">
+             Copyright &copy; 2024 www.logohospital.com - All Rights reserverd
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
