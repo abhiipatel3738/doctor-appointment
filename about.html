@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+    background-color: #f2f2f2;
+}
+        .first-1{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .text-small{
+            color: gray;
+        }
+        .text-3{
+            font-size: 50px;
+            margin-left: 30px;
+        }
+        .first-1 p{
+            font-size: 50px;
+            color: rgb(97, 166, 193);
+            text-align: center;
+        } 
+        .topics ul li{
+            color: gray;
+            font-size: 20px;
+        }
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+button {
+    grid-column: span 2;
+    background-color:rgb(176, 221, 255);
+    color: blue;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all ease-in 0.4s;
+}
+button:hover {
+    background-color: rgb(123, 197, 253);
+    color: white;
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="burger-menu" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="logo"><img src="img/logo-social.png" alt="logo"></div>
+        <ul class="nav-list">
+           
+            <li><a href="index.html">Find Doctors</a></li>
+            <li><a href="video.html">Video Counsult</a></li>
+            <!-- Youtube playlists -->
+            <li><a href="medicine.html">Medicine</a></li>
+            <li><a href="about.html">About/Contact us</a></li>
+            <!-- some content of the company -->
+            <li><a href="login.html"><button class="btn-1">Login/signup</button></a></li>
+        </ul>
+       
+    </div>
+
+    <div class="first-1">
+        <p>Quality Healthcare Made Simple</p>
+    </div><hr>
+    <section class="sec1">
+        <p class="text-big">
+            Our Mission
+        </p>
+        <p class="text-small">
+            A mission to make quality healthcare affordable and accessible for over a billion+ Indians. We believe in empowering our users with the most accurate, comprehensive, and curated information and care, enabling them to make better healthcare decisions.
+        </p>
+    </section><hr>
+    <div class="sec1">
+    <p class="text-3">
+        Our offerings
+    </p>
+    <div class="topics">
+        <ul>
+            <li>Comprehensive medical directory with detailed, verified information about more than a lakh doctor partners across the country</li>
+            <li>Online appointment booking at over 9,000 leading hospitals and clinics with doctors who use Practo Prime</li>
+            <li>Online consultation with trusted doctors across 20+ specialities</li>
+            <li>Plus, subscription-based health plans, that provide unlimited online consultations* with doctors 24*7*365
+                *Fair usage policy applicable</li>
+            <li>Ray, Practo's award-winning practice management software, which is used by 10,000+ clinics</li>
+            <li>Insta, a full-stack HIMS solution, which is trusted by 500+ clients across 1,200+ facilities</li>
+            <li>Diagnostic Tests through Practo Associate Labs to get samples collected from the comfort and safety of one's home</li>
+            <li>
+                Medicine delivery by a network of verified pharmacies across the country
+            </li>
+            
+        </ul>
+    </div>
+    </div>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p class="text-footer">
+             Copyright &copy; 2024 www.logohospital.com - All Rights reserverd
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
